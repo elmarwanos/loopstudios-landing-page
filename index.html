@@ -1,90 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="HandheldFriendly" content="true" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
     <link rel="stylesheet" href="./index.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Alata&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet" />
     <title>Frontend Mentor | Loopstudios landing page</title>
-  </head>
+</head>
 
-  <body>
+<body>
     <div id="hidden-links" class="Josefin">
-      <a href="#">ABOUT</a>
-      <a href="#">CAREERS</a>
-      <a href="#">EVENTS</a>
-      <a href="#">PRODUCTS</a>
-      <a href="#">SUPPORT</a>
+        <a href="#">ABOUT</a>
+        <a href="#">CAREERS</a>
+        <a href="#">EVENTS</a>
+        <a href="#">PRODUCTS</a>
+        <a href="#">SUPPORT</a>
     </div>
 
     <header class="header header-spacing Alata">
-      <img
-        class="hide-for-mobile"
-        src="./images/desktop/image-hero.jpg"
-        alt="Hero desktop"
-      />
-      <img
-        class="hide-for-desktop"
-        src="./images/mobile/image-hero.jpg"
-        alt="Hero mobile"
-      />
+        <img class="hide-for-mobile" src="./images/desktop/image-hero.jpg" alt="Hero desktop" />
+        <img class="hide-for-desktop" src="./images/mobile/image-hero.jpg" alt="Hero mobile" />
 
-      <nav>
-        <a href="/" class="header-logo">
-          <img src="./images/logo.svg" alt="loopstudios" />
-        </a>
+        <nav>
+            <a href="/" class="header-logo">
+                <img src="./images/logo.svg" alt="loopstudios" />
+            </a>
 
-        <button
-          type="button"
-          class="header-hamburger"
-          onclick="toggleHamburger()"
-        >
+            <button type="button" class="header-hamburger" onclick="toggleHamburger()">
           <img src="./images/icon-hamburger.svg" alt="icon-hamburger" />
         </button>
 
-        <div class="header-links" id="links">
-          <a href="#">About</a>
-          <a href="#">Careers</a>
-          <a href="#">Events</a>
-          <a href="#">Products</a>
-          <a href="#">Support</a>
-        </div>
-      </nav>
+            <div class="header-links" id="links">
+                <a href="#">About</a>
+                <a href="#">Careers</a>
+                <a href="#">Events</a>
+                <a href="#">Products</a>
+                <a href="#">Support</a>
+            </div>
+        </nav>
 
-      <div class="header-slogan Josefin">
-        <span>IMMERSIVE EXPERIENCES THAT DELIVER</span>
-      </div>
+        <div class="header-slogan Josefin">
+            <span>IMMERSIVE EXPERIENCES THAT DELIVER</span>
+        </div>
     </header>
 
-    The leader in interactive VR Founded in 2011, Loopstudios has been producing
-    world-class virtual reality projects for some of the best companies around
-    the globe. Our award-winning creations have transformed businesses through
-    digital experiences that bind to their brand. Our creations See all Deep
-    earth Night arcade Soccer team VR The grid From up above VR Pocket borealis
-    The curiosity Make it fisheye About Careers Events Products Support © 2021
-    Loopstudios. All rights reserved.
+    <div class="main">
+        <div class="main-intro">
+            <img class="hide-for-mobile" src="./images/desktop/image-interactive.jpg" alt="interatctive img desktop" />
+            <img id="interactive-mobile" class="hide-for-desktop" src="./images/mobile/image-interactive.jpg" alt="interactive img mobile" />
+            <div class="main-intro-text">
+                <div class="Josefin">The leader in interactive VR</div>
+                <div class="Alata">Founded in 2011, Loopstudios has been producing world-class virtual reality projects for some of the best companies around the globe. Our award-winning creations have transformed businesses through digital experiences that bind to their
+                    brand.
+                </div>
+            </div>
+        </div>
+
+        <div class="projects">
+            <div class="projects-head">Our creations <button>See all</button></div>
+
+            <div class="pj1">Deep earth</div>
+            <div class="pj2">Night arcade</div>
+            <div class="pj3">Soccer team VR</div>
+            <div class="pj4">The grid</div>
+            <div class="pj5">From up above VR</div>
+            <div class="pj6">Pocket borealis</div>
+            <div class="pj7">The curiosity</div>
+            <div class="pj8">Make it fisheye</div>
+        </div>
+    </div>
+
+    <footer>
+        <nav>
+            <a href="/" class="header-logo">
+                <img src="./images/logo.svg" alt="loopstudios" />
+            </a>
+            <div class="socials"></div>
+            <div class="links">About Careers Events Products Support</div>
+            <div class="copyright">© 2021 Loopstudios. All rights reserved.</div>
+        </nav>
+    </footer>
 
     <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
     </div>
+
     <script src="./index.js"></script>
-  </body>
+</body>
+
 </html>
